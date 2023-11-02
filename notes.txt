@@ -1,0 +1,23 @@
+
+debugger
+
+l    list
+r    run
+b    break
+i r   info register
+i b   info breaks
+q    quit
+
+Usuwanie breakointow:
+del delete nr breakpointa
+cl clear numer linii
+
+Sesja z debuggerem:
+- l
+- l
+- b (numer linii)
+- i b  (sprawdzamy czy break jest w dobrym miejscu)
+- r 
+- i r
+- q
+
