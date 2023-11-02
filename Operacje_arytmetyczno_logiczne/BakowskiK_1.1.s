@@ -19,7 +19,6 @@ _start:
     nop
 
 
-
-
-    # BakowskiK_1_5.s
-    # mail : [Asm] zd.1.5
+# Napisać program do wyznaczania w rejestrze EDX sumy kwardratów wartości umieszczonych
+# w rejestrach EBX i ECX:
+# EDX ← EBX^2 + ECX^2

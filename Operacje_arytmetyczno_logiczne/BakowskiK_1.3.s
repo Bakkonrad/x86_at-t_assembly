@@ -13,4 +13,5 @@ _start:
 
     nop
     
-# Wynik w EAX
+#  Napisać program do wyznaczania w rejestrze EAX sumy cyfr w reprezentacji dziesiętnej wartości umieszczonej w rejestrze ESI, zakładając, że wartość ta (w reprezentacji dziesiętnej) jest
+# co najwyżej 2-cyfrowa.

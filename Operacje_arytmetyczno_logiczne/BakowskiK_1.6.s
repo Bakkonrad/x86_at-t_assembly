@@ -29,3 +29,6 @@ _start:
     nop
 
     # xor %DX, %DX
+
+# Napisać program realizujący następujące działanie:
+# ECX ← (EAX*ECX-EDX^2)/-EBX 

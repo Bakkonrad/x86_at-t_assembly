@@ -13,3 +13,6 @@ _start:
 
     nop
     
+
+#  Napisa¢ program do sprawdzania, czy wartość umieszczona w rejestrze ESI jest podzielnikiem wartości umieszczonej w rejestrze EDI. Wyniki - 0, jeśli jest podzielnikiem lub wartość
+#  niezerowa w przeciwnym przypadku. Wynik ma być w EAX.

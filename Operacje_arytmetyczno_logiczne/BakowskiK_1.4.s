@@ -21,3 +21,7 @@ _start:
 
 
     nop
+
+# Napisać program do wyznaczania w rejestrze EAX sumy kwadratów cyfr w reprezentacji
+# dziesiętnej warto±ci umieszczonej w rejestrze EDI, zakładając, że wartość ta (w reprezentacji
+# dziesiętnej) jest co najwy»ej 2-cyfrowa.

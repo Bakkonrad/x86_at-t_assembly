@@ -22,7 +22,8 @@ _start:
 
     nop
 
-    # wynik to 10 nie patrząc na resztę
+# Napisać program realizujący następujące działanie:
+# ECX ← (EAX^2+EBX)/EDX 
 
 
 
