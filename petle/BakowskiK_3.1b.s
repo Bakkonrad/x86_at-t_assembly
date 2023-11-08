@@ -5,6 +5,7 @@ _start:
     
     mov $8, %EBX
     mov $1, %ECX
+    mov $1, %EAX # dla !0 oraz !1
 
 __begin:
     cmp $1, %EBX  # sprawdzanie czy wartosc w EBX to 1
