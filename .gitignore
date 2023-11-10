@@ -4,6 +4,7 @@
 ### Assembler ###
 *.exe
 *.o
+/**/*.o
 *.obj
 *.bc
 
