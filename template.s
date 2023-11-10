@@ -10,3 +10,7 @@ _start:
 __begin:
 
     # zerować EDX czy inne rejestry jesli potrzeba w tej części
+
+
+__end:
+    nop
