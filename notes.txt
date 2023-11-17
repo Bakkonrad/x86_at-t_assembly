@@ -21,3 +21,5 @@ Sesja z debuggerem:
 - i r
 - q
 
+
+x/s &n1
