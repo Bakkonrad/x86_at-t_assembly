@@ -13,6 +13,7 @@ _start:
     mov $0, %EDX # inicjalizacja licznika pętli
     
 __begin:
+    
     cmp $tab_size, %EDX
     jge end_loop
     
@@ -29,4 +30,3 @@ end_loop:
 
 __end:
     nop
-    

@@ -8,7 +8,8 @@ _start:
 __begin:
     call max_value 
 
-    jmp __end
+__end:
+    nop
 
 max_value:
     cmp %eax, %ebx        # Porównaj wartości w rejestrach %eax i %ebx
@@ -19,5 +20,3 @@ max_value:
 skip_swap:
     ret                   # Zakończ funkcję              
 
-__end:
-    nop

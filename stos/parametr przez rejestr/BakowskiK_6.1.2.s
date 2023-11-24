@@ -7,7 +7,8 @@ _start:
 __begin:
     call sign_value 
 
-    jmp __end
+__end:
+    nop
 
 sign_value:
     test %ebx, %ebx 
@@ -27,5 +28,3 @@ zero_value:
     mov $0, %eax
     ret                
 
-__end:
-    nop
