@@ -1,5 +1,5 @@
 .section .data
-array: .int 1, 2, 3, 4, 5, 6, 7, 8, 0, 0
+array: .int 1, 2, 3, 4, 5, -2, 7, 0, 9, 10
 end_array:
 
 .equ tab_size, (end_array - array)/4 
@@ -14,7 +14,7 @@ __begin:
 
     push %ecx          # Zapamiętanie rozmiaru tablicy na stosie
     push %edi          # Zapamiętanie adresu początkowego tablicy na stosie
-    call calculate_sum 
+    call count_positive_elements
 
     # Wynik w %eax
 
@@ -23,7 +23,7 @@ __begin:
 __end:
     nop
 
-calculate_sum:
+count_positive_elements:
     xor %eax, %eax     # Zerowanie %eax (suma)
 
     mov 4(%esp), %ecx           # Pobranie adresu początkowego tablicy ze stosu
@@ -32,9 +32,10 @@ calculate_sum:
 _loop:
     cmp $0, %edx
     jle end_loop    
-    mov -4(%ecx, %edx, 4), %ebx
+    mov -4(%ecx, %edx, 4), %edi
+    cmp $0, %edi
     jle skip
-    add %ebx, %eax
+    inc %eax     
 
 skip:
     dec %edx

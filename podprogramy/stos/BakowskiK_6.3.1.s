@@ -8,6 +8,7 @@ end_array:
 .globl _start
 
 _start:
+__begin:
     lea array, %edi
     mov $tab_size, %ecx 
 
@@ -28,12 +29,12 @@ calculate_sum:
     mov 4(%esp), %ecx           # Pobranie adresu początkowego tablicy ze stosu
     mov 8(%esp), %edx           # Pobranie rozmiaru tablicy ze stosu
 
-__begin:
+_loop:
     cmp $0, %edx
     jle end_loop    
     add -4(%ecx, %edx, 4), %eax
     dec %edx     
-    jmp __begin
+    jmp _loop
 
 end_loop:
     ret
