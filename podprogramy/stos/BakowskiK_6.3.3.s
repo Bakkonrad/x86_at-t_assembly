@@ -31,7 +31,7 @@ calculate_sum:
 __begin:
     cmp $0, %edx
     jle end_loop    
-    add -4(%ecx, %edx, 4), %eax
+    mov -4(%ecx, %edx, 4), %ebx
     dec %edx     
     jmp __begin
 
