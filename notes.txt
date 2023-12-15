@@ -23,3 +23,7 @@ Sesja z debuggerem:
 
 
 x/s &n1
+
+x/10dw &fibonacci_array
+
+z 6.3 zrobić zadania z parametrem tablicowym i parametrem napisowym
